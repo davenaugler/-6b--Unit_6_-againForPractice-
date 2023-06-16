@@ -25,9 +25,11 @@ public class ChevyVehicle extends Vehicle {
 	public void info() {
 		System.out.println("I'm a new Chevy with todays modern features and technology");
 	}
-
-	public void info(String yearBuilt, String vehicleMake, String vehicleModel) {
-		System.out.println("I'm a brand new " + yearBuilt + " " + vehicleMake + " " + vehicleModel
-				+ ", with todays modern features and technology");
+	
+	public void info (String vehicleMake) {
+		System.out.println("I am a " + vehicleMake);
 	}
+
+	
+	
 }

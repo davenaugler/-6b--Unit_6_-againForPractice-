@@ -11,18 +11,15 @@ public class Vehicle {
 	private String numCombustionEngineVehicles;
 	private String numHybridVehicles;
 	
-	private void getMoreTorque () {
-		System.out.println("Vehicle is getting a boost in torque");
-	}
-	
 	public void info () {
 		System.out.println("I am a vehicle");
 	}
 	
-	public void info (String yearBuilt, String vehicleMake, String vehicleModel) {
-		System.out.println("I'm a brand new " + yearBuilt + " " + vehicleMake + " " + vehicleModel);
+	public void info(String yearBuilt, String vehicleMake, String vehicleModel) {
+		System.out.println("I'm a brand new " + yearBuilt + " " + vehicleMake + " " + vehicleModel
+				+ ", with todays modern features and technology");
 	}
-
+	
 	public Vehicle() {
 		System.out.println("[Inside the Vehicle constructor]");
 		this.vehicleType = "Vehicle type, not set";

@@ -22,4 +22,10 @@ public class MazdaVehicle extends Vehicle {
 	public void info () {
 		System.out.println("I'm a new Mazda and I'm a mid level vehicle");
 	}	
+	
+	public void info (String yearBuilt, String vehicleMake, String vehicleModel) {
+		System.out.println("I'm a brand new " + yearBuilt + " " + vehicleMake + " " + vehicleModel);
+	}
+	
+	
 }

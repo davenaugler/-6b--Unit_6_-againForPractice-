@@ -15,6 +15,21 @@ public class Lesson1Application {
 //		[] - Writing to Files
 		
 
+		
+		Vehicle chevyVehicle = new ChevyVehicle();
+		
+		// Casting
+		ChevyVehicle castedChevyVehicle = (ChevyVehicle)chevyVehicle;
+		
+		castedChevyVehicle.info("Chevy");
+		// ((ChevyVehicle)chevyVehicle).info("Chevy");
+		System.out.println(chevyVehicle.getNumModelVehicleSoldCurrentCalendarYear());
+		System.out.println(chevyVehicle.getNumEVVehicles());
+		System.out.println(chevyVehicle.getNumHybridVehicles());
+		chevyVehicle.info("2023", "Chevy", "Silverado");
+		System.out.println("------------------------------------------------------------");
+		
+		
 		Vehicle mazdaVehicle = new MazdaVehicle();
 		
 		System.out.println(mazdaVehicle.getNumModelVehicleSoldCurrentCalendarYear());
@@ -23,14 +38,8 @@ public class Lesson1Application {
 		mazdaVehicle.info();
 		System.out.println("------------------------------------------------------------");
 		
-		ChevyVehicle chevyVehicle = new ChevyVehicle();
-		System.out.println(chevyVehicle.getNumModelVehicleSoldCurrentCalendarYear());
-		System.out.println(chevyVehicle.getNumEVVehicles());
-		System.out.println(chevyVehicle.getNumHybridVehicles());
-		chevyVehicle.info("2023", "Chevy", "Silverado");
-		System.out.println("------------------------------------------------------------");
-		
 		Vehicle classicChevyVehicle = new ClassicChevyVehicle();
+		
 		System.out.println(classicChevyVehicle.getNumModelVehicleSoldCurrentCalendarYear());
 		System.out.println(classicChevyVehicle.getNumEVVehicles());
 		System.out.println(classicChevyVehicle.getNumHybridVehicles());
